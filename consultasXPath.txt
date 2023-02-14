@@ -1,0 +1,41 @@
+Obtén as rutas de localización para obter os seguintes conxuntos de nodos:
+
++ As máquinas que contén o documento.
+
+//máquina
+
++ A información correspondente ao hardware das máquinas.
+
+//máquina/hardware
+
++ A información de configuración das máquinas.
+
+//máquina/config
+
++ A lista de fabricantes dos equipos.
+
+//máquina/hardware/fabricante
+
++ A lista de discos que conteñen.
+
+//máquina/hardware/disco
+
++ Os enderezos IP.
+
+//IP
+
+Escribe as expresións XPath para obter os seguintes conxuntos de nodos:
+
++ Os nomes das máquinas.
+
+/equipos/máquina/@nome
+
++ Os nomes das máquinas que teñan gravadora óptica (DVD).
+
+//máquina/hardware/gravadora/ancestor-or-self::máquina/@nome
+
++ O sistema operativo das máquinas nas que figure o "role".
+
+//máquina/config/role/ancestor-or-self::config/OS
+
+
