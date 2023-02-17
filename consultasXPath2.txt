@@ -37,7 +37,7 @@ count(//tutorial)
 //tutorial[last()-1]
 
 11. Devolve os titoriais que conteñan a palabra Spring no seu títullo.
-//tutorial/titulo[contains(text(),'Spring')]
+//tutorial/titulo[contains(text(),'Spring')]/..
 
 12. Devolve a información do titorial onde o nome do autor sexa Alejandro.
 //tutorial/autor[nombre="Alejandro"]/..
