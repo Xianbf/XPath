@@ -1,0 +1,44 @@
+1. Devolver os nodos tutorial
+
+a) Con ruta relativa
+//tutorial
+b) Con ruta absoluta
+/tutoriales/tutorial
+
+2. Devolver todas as categorías.
+
+a) Con ruta relativa.
+//tutorial/categaroia
+b) Con ruta absoluta.
+/tutoriales/tutorial/categoria
+
+3. Devolve o número total de titoriais existentes.
+count(//tutorial)
+
+4. Devolver os anos de publicación de todos os titoriais.
+//tutorial/@anio
+
+5. Devolve os nomes dos autores que o seu nome ten menos de 9 letras.
+//nombre[string-length() <9]
+
+6. Devolve os nodos titorial de aqueles posteriores o ano 2012.
+//tutorial[@anio>2012]
+
+7. Devolve os titoriais da categoría Spring.
+//tutorial[categoria=Spring]
+
+8. Devolve os titoriais da categoría XML escritos no ano 2011.
+//tutorial[categoria="Spring"]
+
+9. Devolve o titorial que se atopa na posición 2 da lista de tutoriais.
+//tutorial[position()=2]
+
+10. Devolve o titorial que se atopa na penúltima posición da lista de tutoriais.
+//tutorial[last()-1]
+
+11. Devolve os titoriais que conteñan a palabra Spring no seu títullo.
+//tutorial/titulo[contains(text(),'Spring')]
+
+12. Devolve a información do titorial onde o nome do autor sexa Alejandro.
+//tutorial/autor[nombre="Alejandro"]/..
+
